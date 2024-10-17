@@ -28,7 +28,6 @@ const ProductsAndCategories = () => {
     { id: 4, name: "Beds", img: "/pro18.jpg" },
   ];
 
-
   return (
     <>
       {/* Featured Products Section */}
@@ -80,7 +79,7 @@ const ProductsAndCategories = () => {
           </div>
         </div>
       </section>
-      {/* Over Products Section */}
+
       <section className="py-16 bg-gray-100">
         <div className="container mx-auto text-center">
           <h2 className="text-3xl font-bold mb-6">Our Products</h2>
