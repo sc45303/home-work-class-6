@@ -27,13 +27,7 @@ const ProductsAndCategories = () => {
     { id: 3, name: "Tables", img: "/pro3.jpg" },
     { id: 4, name: "Beds", img: "/pro18.jpg" },
   ];
-  [
-    { id: 1, name: "Chairs", img: "/pro1.jpg" },
-    { id: 2, name: "Chairs", img: "/pro5.jpg" },
-    { id: 3, name: "Chairs", img: "/pro7.jpg" },
-    { id: 4, name: "Chairs", img: "/pro8.jpg" },
-    { id: 5, name: "Chairs", img: "/pro10.jpg" },
-  ];
+
 
   return (
     <>
