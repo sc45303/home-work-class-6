@@ -1,27 +1,39 @@
- import Link from "next/link";
+import { CiSearch } from "react-icons/ci";
 
-// components/Header.tsx
+import { FaChair } from "react-icons/fa";
+import { FaCartArrowDown } from "react-icons/fa6";
+import { CiHeart } from "react-icons/ci";
+import { MdOutlinePersonOutline } from "react-icons/md";
+
+{
+}
+
 const Header = () => {
-    return (
-      <header className="  min-w-min  flex  bg-white shadow container  justify-berween">
-        <div className="container mx-12 flex justify-between items-center p-4  max-w-screen-md">
-          <div className="text-xl font-bold  flex pl-12">Comforty</div>
-          <nav>
-            <ul className=" space-x-4 flex  "  >
-              <li><Link href="/" className="hover:text-gray-600">Home</Link></li>
-              <li><Link href="/shop" className="hover:text-gray-600">Shop</Link></li>
-              <li><Link href="/products" className="hover:text-gray-600">Products</Link></li>
-              <li><Link href="/about" className="hover:text-gray-600">About</Link></li>
-              <li><Link href="/contact" className="hover:text-gray-600">Contact</Link></li>
-            </ul>
-          </nav>
-          <div className="flex justify-between ">
-            <input type="text" placeholder="Search" className="border p-2 rounded" />
-          </div>
+  return (
+    <div className="shadow w-full fixed top-0 left-0">
+      <div className="flex items-center justify-between  bg-white py-4 md:px-10 px-7 ">
+        <div className=" text-3xl font-bold cursor-pointer flex items-center text-gray-950  px-40">
+          <span className="text-3xl  text-gray-950 mr-1 pt-2 space-x-60  ">
+            <FaChair className="text-green-600" />
+          </span>
+          Comforty
         </div>
-      </header>
-    );
-  };
-  
-  export default Header;
-  
+        <div className=" flex items-center border border-slate-300 rounded-md w-96 shadow-sm ">
+          <input
+            className=" placeholder: placeholder:text-slate-400  rounded-md py-2 pl-4 pr-3  w-full focus:outline-none  shadow-sm  sm:text-sm items-center  justify-center  "
+            placeholder="Search here..."
+            type="text"
+            name="search"
+          />
+          <CiSearch className="text-gray-400 mr-4" />
+        </div>
+
+        <FaCartArrowDown />
+        <CiHeart />
+        <MdOutlinePersonOutline />
+      </div>
+    </div>
+  );
+};
+
+export default Header;

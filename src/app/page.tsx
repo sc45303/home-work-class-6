@@ -4,17 +4,16 @@ import Footer from "./Components/Footer/page";
 import Header from "./Components/Header/page";
 import Products from "./Components/products";
 
-export default function Home(){
-return(
+export default function Home() {
+  return (
+    <div>
+      <Header />
 
-  <div>
-    <Header />
-    <Hero />
-    <Products />
-    <Footer />
-  
-    
-  </div>
-);
+      <Hero />
 
+      <Products />
+
+      <Footer />
+    </div>
+  );
 }
